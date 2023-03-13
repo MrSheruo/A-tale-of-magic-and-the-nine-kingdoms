@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Cairo", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #2e2e2e;
+  min-height: 100vh;
+  padding-top: 2em;
+}
+
+a {
+  color: #eee;
+  text-decoration: none;
+  transition: 0.2s;
+}
+a:hover {
+  color: crimson;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: crimson;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Start navbar ************************************************************* */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #222;
+  width: 100%;
+  height: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2em;
+  box-shadow: #222;
+  -webkit-box-shadow: 1px 9px 24px -15px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: 1px 9px 24px -15px rgba(0, 0, 0, 0.61);
+  box-shadow: 1px 9px 24px -15px rgba(0, 0, 0, 0.61);
+}
+.logo,
+#menu,
+.nav-links a {
+  color: #eee;
+}
+.logo {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+.nav-links a {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+  transition: all 0.3s linear;
+}
+
+.nav-links a:hover {
+  color: crimson;
+}
+#menu {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+/* End navbar ************************************************************* */
+
+/* Start Main ************************************************************* */
+
+.container {
+  margin: 0 3em;
+}
+.main {
+  margin: 0;
+  padding-top: 200px;
+  padding-right: 3em;
+  background-image: url(images/Gate.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+.main-headings {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+.main-headings span {
+  font-size: 2em;
+  font-weight: 500;
+  color: #eee;
+  display: block;
+}
+.main-headings h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: crimson;
+}
+.main-headings p {
+  width: 70%;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #eee;
+}
+.main-etc {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.main-etc button {
+  border: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.main-etc button:hover {
+  background-color: crimson;
+}
+.main-etc button a {
+  padding: 10px 20px;
+  font-size: 1.3em;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #222;
+}
+.main-etc button a:hover {
+  color: #eee;
+}
+.social-media-icons {
+  margin-top: 1.3em;
+
+  display: flex;
+  justify-content: space-around;
+}
+.social-media-icons .fab {
+  font-size: 2.5em;
+}
+/* End Main ************************************************************* */
+
+/* Start chapters section ************************************************************* */
+.body {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body h2,
+About-body {
+  font-size: 2.2em;
+  font-weight: 700;
+  color: #eee;
+  margin-bottom: 2em;
+}
+.body h2:hover {
+  color: crimson;
+}
+
+.chapters {
+  padding: 10px 10px;
+  min-width: 100%;
+  border: #eee 1px solid;
+  border-radius: 5px;
+}
+.chapter-hovering:hover > .chapter {
+  background-color: crimson;
+}
+.chapter {
+  cursor: pointer;
+  background-color: #222;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.chapter-info {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: #eee;
+}
+.chapter-info h3 {
+  font-size: 1.3em;
+  margin-left: 10px;
+}
+.chapter-info span {
+  font-size: 1.3em;
+}
+.chapter-info h4 {
+  font-size: 1.3em;
+}
+.chapter-info .fas {
+  padding-top: 18px;
+}
+/* End chapters section ************************************************************* */
+
+/* Start About section ************************************************************* */
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about {
+  width: 50%;
+  margin: 0 10px;
+}
+.about span {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: crimson;
+}
+.about p {
+  font-size: 1em;
+  color: #eee;
+}
+/* End About section ************************************************************* */
+
+/* Start Footer section ************************************************************* */
+.Footer {
+  margin-top: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  height: 80px;
+}
+
+.Footer h3 {
+  color: crimson;
+}
+
+/* End Footer section ************************************************************* */
+
+/* Start Resbonsive section ************************************************************* */
+
+@media (max-width: 1200px) {
+  .logo {
+    font-size: 1.3em;
+  }
+}
+@media (max-width: 800px) {
+  #menu {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #222;
+    display: block;
+    transition: all 0.3s linear;
+    padding: 1em 2em;
+    border-top: 1px solid #fff2;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .nav-toggle {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .nav-links a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: crimson;
+    margin: 1em 0;
+    border-radius: 5px;
+  }
+  .nav-links a:hover {
+    color: #222;
+  }
+  .fa-times {
+    transform: rotate(180deg);
+  }
+}
+@media (max-width: 425px) {
+  .logo {
+    font-size: 0.6em;
+  }
+  .main-headings span {
+    font-size: 1.2em;
+  }
+  .main-headings h1 {
+    font-size: 1.4em;
+  }
+  .main-headings p {
+    font-weight: 500;
+    font-size: 1em;
+  }
+  .chapter {
+    cursor: pointer;
+    background-color: #222;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  .chapter-info {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    color: #eee;
+  }
+  .chapter-info h3 {
+    font-size: 1em;
+  }
+  .chapter-info span {
+    font-size: 1em;
+  }
+  .chapter-info h4 {
+    font-size: 1em;
+  }
+  .chapter-info .fas {
+    padding-top: 10px;
+  }
+
+  .about {
+    width: 80%;
+    margin: 10px 10px;
+  }
+  .about span {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: crimson;
+  }
+  .about p {
+    font-size: 0.8em;
+    color: #eee;
+  }
+}
+
+/* End Resbonsive section ************************************************************* */
